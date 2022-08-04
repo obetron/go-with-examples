@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+/*
+* zeroval doesn’t change the i in main,
+* but zeroptr does because it has a reference to the memory address for that variable.
+ */
+
 func zeroval(ival int) {
 	ival = 0
 }
