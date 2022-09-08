@@ -8,6 +8,7 @@ import (
 const s string = "constant string"
 
 func main() {
+
 	fmt.Println(s)
 
 	const n = 500000000
@@ -17,5 +18,10 @@ func main() {
 	fmt.Println(d)
 	fmt.Println(int64(d))
 
+	//in this example math.Sin method accepts float64 type so 'n' would be float64 type
 	fmt.Println(math.Sin(n))
+
+	//if want to give directly int var into math.Sin function, it would coverted to float64 as shown below.
+	notConst := 50000
+	fmt.Println(math.Sin(float64(notConst)))
 }
