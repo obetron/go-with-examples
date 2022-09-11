@@ -27,4 +27,7 @@ func main() {
 
 	k--
 	fmt.Println(k) //10
+
+	// x = x + 10 // assignment statement
+	// x -= 10 //assigment operation
 }
