@@ -5,6 +5,9 @@ import (
 	"math"
 )
 
+// const ---> compile time
+// var 	 ---> run time
+
 const s string = "constant string"
 
 func main() {
