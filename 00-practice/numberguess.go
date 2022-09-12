@@ -33,7 +33,7 @@ func main() {
 		} else if num < target {
 			fmt.Println("The number bigger than your guess, enter a number less than your guess")
 		} else {
-			fmt.Println("Correct Guess at ", attempts, " attemp(s)")
+			fmt.Println("Correct Guess at ", attempts+1, " attemp(s)")
 			break
 		}
 	}
