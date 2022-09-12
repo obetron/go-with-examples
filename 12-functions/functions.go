@@ -11,6 +11,10 @@ func greetingWithName(name string) string {
 	return greetingStr
 }
 
+func definePerson(name string, height int) {
+	fmt.Printf("height of %v is %d cm\n", name, height)
+}
+
 func plus(a int, b int) int {
 	return a + b
 }
@@ -24,6 +28,8 @@ func main() {
 	greeting()
 	greeting := greetingWithName("Test")
 	fmt.Println(greeting)
+
+	definePerson("Test", 175)
 
 	sum := plus(2, 5)
 	fmt.Println("2 + 5 = ", sum)
