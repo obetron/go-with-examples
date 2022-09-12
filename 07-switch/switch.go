@@ -51,4 +51,22 @@ func main() {
 	whatAmI("Eren")
 	whatAmI(4.5)
 
+	switch x := 25; {
+	case x < 20:
+		fmt.Printf("%d kucuktur 20\n", x)
+		fallthrough
+
+	case x < 50:
+		fmt.Printf("%d kucuktur 50\n", x)
+		fallthrough
+
+	case x < 75:
+		fmt.Printf("%d kucuktur 75\n", x)
+		fallthrough
+
+	case x < 100:
+		fmt.Printf("%d kucuktur 100\n", x)
+
+	}
+
 }
