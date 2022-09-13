@@ -62,4 +62,23 @@ func main() {
 	delete(myMap4, "Eskisehir")
 	fmt.Println("myMap4:", myMap4)
 	fmt.Println("myMap5:", myMap5)
+
+	fmt.Println("\nKIND of COMPLEX MAP EXAMPLE")
+	myComplexMap := map[string][]string{
+		"Ankara":    []string{"Cankaya", "Yenimahalle", "Bala", "Haymana", "Etimesgut", "Eryaman"},
+		"Eskisehir": []string{"Yenimahalle", "Odunpazari", "Palu", "Batikent"},
+		"Bursa":     []string{"Nilufer"},
+	}
+
+	fmt.Println(myComplexMap["Ankara"])
+	fmt.Println(myComplexMap["Eskisehir"][0])
+
+	for key, value := range myComplexMap {
+		fmt.Println("Il:", key)
+		fmt.Println("Ilceler:")
+		for _, v := range value {
+			fmt.Println("\t", v)
+		}
+	}
+
 }
