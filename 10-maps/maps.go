@@ -65,9 +65,9 @@ func main() {
 
 	fmt.Println("\nKIND of COMPLEX MAP EXAMPLE")
 	myComplexMap := map[string][]string{
-		"Ankara":    []string{"Cankaya", "Yenimahalle", "Bala", "Haymana", "Etimesgut", "Eryaman"},
-		"Eskisehir": []string{"Yenimahalle", "Odunpazari", "Palu", "Batikent"},
-		"Bursa":     []string{"Nilufer"},
+		"Ankara":    {"Cankaya", "Yenimahalle", "Bala", "Haymana", "Etimesgut", "Eryaman"},
+		"Eskisehir": {"Yenimahalle", "Odunpazari", "Palu", "Batikent"},
+		"Bursa":     {"Nilufer"},
 	}
 
 	fmt.Println(myComplexMap["Ankara"])
