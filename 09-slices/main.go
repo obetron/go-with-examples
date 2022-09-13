@@ -79,4 +79,11 @@ func main() {
 	myAppendSlc3 = append(myAppendSlc3, myAppendSlc4...)
 	fmt.Println(myAppendSlc3)
 
+	fmt.Println("\nNIL & EMPTY SLICE TYPES")
+	var nilSlc []int
+	fmt.Printf("%#v\n", nilSlc)
+
+	emptySlc := make([]int, 0)
+	fmt.Printf("%#v\n", emptySlc)
+
 }
