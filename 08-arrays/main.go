@@ -16,4 +16,11 @@ func main() {
 		fmt.Println(cars[i])
 	}
 
+	var myArr1 [5]int
+	var myArr2 [4]int
+
+	fmt.Println()
+	fmt.Printf("type of myArr1 is: %T\n", myArr1)
+	fmt.Printf("type of myArr2 is: %T\n", myArr2)
+
 }
