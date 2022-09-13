@@ -34,4 +34,11 @@ func main() {
 		fmt.Println(i, c)
 	}
 
+	//cities example
+	cities := [...]string{"Ankara", "Eskisehir", "Bursa", "Balikesir", "Canakkale"}
+
+	for _, city := range cities {
+		fmt.Println(city)
+	}
+
 }
