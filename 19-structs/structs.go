@@ -44,4 +44,24 @@ func main() {
 	sp.age = 51
 	fmt.Println(sp.age)
 
+	fmt.Println("\nSTRUCT PASS BY VALUE EXAMPLE")
+	type phone struct {
+		brand     string
+		model     string
+		serialNum string
+	}
+
+	phone1 := phone{
+		brand:     "Apple",
+		model:     "iPhone",
+		serialNum: "A5312",
+	}
+	fmt.Println(phone1)
+	phone2 := phone1
+	fmt.Println(phone2)
+
+	phone1.brand = "Samsung"
+	fmt.Println(phone1)
+	fmt.Println(phone2)
+
 }
