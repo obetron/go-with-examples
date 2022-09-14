@@ -14,6 +14,17 @@ func newPerson(name string) *person {
 }
 
 func main() {
+
+	var p2 person
+	p2 = person{"Yasin", 24}
+	fmt.Println(p2)
+
+	var p3 = person{"Ceylan", 34}
+	fmt.Println(p3)
+
+	p1 := person{"Eren", 25}
+	fmt.Printf("%#v\n", p1)
+
 	fmt.Println(person{"Eren", 35})
 
 	fmt.Println(person{name: "Anil", age: 36})
