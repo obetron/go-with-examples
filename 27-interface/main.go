@@ -57,7 +57,7 @@ func main() {
 	interfaceFunc(r1)
 
 	c1 := circle{12}
-	fmt.Println("\nCIRCLE SHAPE EXAPLE")
+	fmt.Println("\nCIRCLE SHAPE EXAMPLE")
 	interfaceFunc(c1)
 
 }
