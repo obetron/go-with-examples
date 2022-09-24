@@ -36,7 +36,7 @@ func main() {
 		isMarried bool
 	}
 
-	var e1 employee2
+	var e1 employee2 //zero value defining with construction
 	e1.name = "Test1"
 	e1.age = 34
 	e1.isMarried = true
@@ -56,5 +56,8 @@ func main() {
 	person2 := Person{2, "Ahmet", 54, false, []string{}}
 	fmt.Println(person1)
 	fmt.Println(person2)
+
+	person3 := Person{} //zero value defining with literal constraction
+	fmt.Println(person3)
 
 }
