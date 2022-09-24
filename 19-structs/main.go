@@ -12,6 +12,7 @@ type Person struct {
 
 func main() {
 
+	// anonymous struct
 	var employee1 struct {
 		name      string
 		age       int
@@ -30,6 +31,7 @@ func main() {
 	fmt.Println(employee1.age)
 	fmt.Println(employee1.isMarried)
 
+	// anonymous struct
 	type employee2 struct {
 		name      string
 		age       int
