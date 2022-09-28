@@ -8,6 +8,9 @@ func main() {
 
 	fmt.Println("\nPASS BY REFERENCE EXAMPLE")
 	passByReference()
+
+	fmt.Println("\nPASS BY VALUE ADDRESS EXAMPLE")
+	passByValueAddress()
 }
 
 func passByValue() {
@@ -20,6 +23,19 @@ func passByValue() {
 func doubleInt(x int) {
 	x *= 2
 	fmt.Println("x double:", x)
+}
+
+func passByValueAddress() {
+	x := 5
+	fmt.Println("Before doubleIntAddress method called, x is", x)
+	doubleIntAddress(&x)
+	fmt.Println("After doubleIntAddress method called, x is", x)
+}
+
+func doubleIntAddress(x *int) {
+	*x *= 2
+	fmt.Println("memory address of x", x)
+	fmt.Println("x double:", *x)
 }
 
 func passByReference() {
