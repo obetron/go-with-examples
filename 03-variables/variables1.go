@@ -3,8 +3,13 @@ package main
 import "fmt"
 
 func main() {
+
+	// Explicit decleration
 	var a1 string
+
+	// Assigning value
 	a1 = "variable definition 1"
+
 	fmt.Println(a1)
 
 	var a2 string = "variable definition 2"
