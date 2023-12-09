@@ -20,4 +20,7 @@ func main() {
 
 	otherD := true
 	fmt.Println("other boolean:", otherD)
+
+	var e bool = false
+	fmt.Println("another boolean: ", e)
 }

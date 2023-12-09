@@ -169,10 +169,10 @@ func main() {
 	fmt.Println("****************************************************************************")
 	fmt.Println()
 
-	fmt.Println("bool, int16, float32 Size:", unsafe.Sizeof(s9), "bits")
-	fmt.Println("bool, int32, float32 Size:", unsafe.Sizeof(s10), "bits")
-	fmt.Println("bool, int64, float32 Size:", unsafe.Sizeof(s11), "bits")
-	fmt.Println("bool, int64, bool, float32 Size:", unsafe.Sizeof(s12), "bits") //14 bit padding
-	fmt.Println("int64, float32, bool, bool Size:", unsafe.Sizeof(s13), "bits") //6 bit padding
+	fmt.Println("bool, int16, float32 Size:\t\t", unsafe.Sizeof(s9), "bytes")
+	fmt.Println("bool, int32, float32 Size:\t\t", unsafe.Sizeof(s10), "bytes")
+	fmt.Println("bool, int64, float32 Size:\t\t", unsafe.Sizeof(s11), "bytes")
+	fmt.Println("bool, int64, bool, float32 Size:\t", unsafe.Sizeof(s12), "bytes") //14 bit padding
+	fmt.Println("int64, float32, bool, bool Size:\t", unsafe.Sizeof(s13), "bytes") //6 bit padding
 
 }
