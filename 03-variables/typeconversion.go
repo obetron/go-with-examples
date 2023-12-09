@@ -13,7 +13,7 @@ func main() {
 
 	//Type Convertion for y and make addition
 	fmt.Println(x + int(y))
-	fmt.Println(float64(x) + y) //convertion for just this line x type still int
+	fmt.Println(float64(x) + y) //convertion for just this line, x type still int
 	fmt.Printf("x type: %T\n", x)
 
 	z := int(y)
@@ -30,4 +30,8 @@ func main() {
 	fmt.Printf("%v %T", m, m)
 	fmt.Println()
 	fmt.Printf("%v %T", n, n)
+
+	// strNum := "45"
+	// intNum := 55
+	// fmt.Println(int(strNum) + intNum) //Error occurred: cannot convert strNum (variable of type string) to type int
 }
