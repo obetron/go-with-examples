@@ -29,9 +29,9 @@ func main() {
 		writeError(err)
 
 		if num > target {
-			fmt.Println("The number less than your guess, enter a number bigger than your guess")
+			fmt.Println("The number less than your guess, enter a number less than your guess")
 		} else if num < target {
-			fmt.Println("The number bigger than your guess, enter a number less than your guess")
+			fmt.Println("The number bigger than your guess, enter a number bigger than your guess")
 		} else {
 			fmt.Println("Correct Guess at ", attempts+1, " attemp(s)")
 			break
